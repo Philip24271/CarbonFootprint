@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Carbon Footprint</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="index.html"><img src="images/logocf.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="more.html">MORE</a></li>
+                    <li><a href="Login.html">LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>User Login</h1>
+
+    </section>
+
+<!-----------login---------->
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Your Email Id" required />
+                        <input type="password" class="input-box" placeholder="Password" required />
+                        <button type="submit" class="submit-btn"> Submit</button>
+                        <input type="checkbox" /><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                    <a href="">Forgot Password</a>
+                </div>
+
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Your Name" required />
+                        <input type="email" class="input-box" placeholder="Your Email Id" required />
+                        <input type="password" class="input-box" placeholder="Password" required />
+                        <button type="submit" class="submit-btn"> Submit</button>
+                        <input type="checkbox" /><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                    <a href="">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var card = document.getElementById("card");
+
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

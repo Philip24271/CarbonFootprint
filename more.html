@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Carbon Footprint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="index.html"><img src="images/logocf.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="more.html">MORE</a></li>
+                    <li><a href="Login.html">LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+   <h1>More</h1>
+
+    </section>
+    <!------------------more----------------->
+    
+    <section class="more">
+        <div class="row">
+            <div class="more-col">
+                <h1>Why do we need to track our carbon emmision?</h1>
+                <p>Human activities such as logging and industrial activities have caused many disastrous effects on our planet such as global warming. Global warming is the increasing of Earth's surface temperature due to greenhouse gases collecting in the atmosphere and trapping heat and causing the Earth to warm up.Since 1870,sea levels have risen about 8 inches. This continous dratic increase in temperature can have disastrous effects on humans.</p>
+                <a href="ExploreMore.html" class="hero-btn red-btn">EXPLORE NOW></a>
+            </div>
+
+            <div class="more-col">
+                <img src="images/emissionsprofile2019.png" />
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-----------icon--------------->
+
+    <section class="icon">
+        <h4>About Us</h4>
+        <p>Follow Us Through The App Below To Get The Latest Update Of Our Progress</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> By Us</p>
+
+
+    </section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-----------JavaScript for Toggle Menu------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
